@@ -7,13 +7,11 @@ import { Heart, Home2, Menu2 } from '@vicons/tabler';
 import { storeToRefs } from 'pinia';
 import HeroGradient from '../assets/hero-gradient.svg?component';
 import MenuLayout from '../components/MenuLayout.vue';
-import NavbarButtons from '../components/NavbarButtons.vue';
 import { useStyleStore } from '@/stores/style.store';
 import { config } from '@/config';
 import type { ToolCategory } from '@/tools/tools.types';
 import { useToolStore } from '@/tools/tools.store';
 import { useTracker } from '@/modules/tracker/tracker.services';
-import CollapsibleToolMenu from '@/components/CollapsibleToolMenu.vue';
 
 const themeVars = useThemeVars();
 const styleStore = useStyleStore();
@@ -52,12 +50,12 @@ const tools = computed<ToolCategory[]>(() => [
         <div v-if="styleStore.isSmallScreen" flex flex-col items-center>
           <locale-selector w="90%" />
 
-          <div flex justify-center>
-            <NavbarButtons />
-          </div>
+          <!-- <div flex justify-center> -->
+            <!-- <NavbarButtons /> -->
+          <!-- </div> -->
         </div>
 
-        <CollapsibleToolMenu :tools-by-category="tools" />
+        <!-- <CollapsibleToolMenu :tools-by-category="tools" /> -->
 
         <div class="footer">
           <div>
@@ -90,7 +88,7 @@ const tools = computed<ToolCategory[]>(() => [
     </template>
 
     <template #content>
-      <div flex items-center justify-center gap-2>
+      <div flex items-center justify-center gap-2 style="display:none">
         <c-button
           circle
           variant="text"
@@ -117,7 +115,7 @@ const tools = computed<ToolCategory[]>(() => [
         <locale-selector v-if="!styleStore.isSmallScreen" />
 
         <div>
-          <NavbarButtons v-if="!styleStore.isSmallScreen" />
+          <!-- <NavbarButtons v-if="!styleStore.isSmallScreen" /> -->
         </div>
 
         <c-tooltip position="bottom" :tooltip="$t('home.support')">

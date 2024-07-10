@@ -17,6 +17,7 @@ const siderPosition = computed(() => (isSmallScreen.value ? 'absolute' : 'static
       :show-trigger="false"
       :native-scrollbar="false"
       :position="siderPosition"
+      class="sider"
     >
       <slot name="sider" />
     </n-layout-sider>
@@ -36,6 +37,10 @@ const siderPosition = computed(() => (isSmallScreen.value ? 'absolute' : 'static
   height: 100%;
   background-color: #00000080;
   cursor: pointer;
+}
+
+.sider {
+  display: block
 }
 
 .content {

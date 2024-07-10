@@ -80,6 +80,7 @@ const toolDescription = computed<string>(() => t(`tools.${i18nKey.value}.descrip
   .tool-header {
     padding: 40px 0;
     width: 100%;
+    display: none;
 
     .n-h1 {
       opacity: 0.9;
