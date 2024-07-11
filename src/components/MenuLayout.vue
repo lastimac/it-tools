@@ -13,7 +13,7 @@ const siderPosition = computed(() => (isSmallScreen.value ? 'absolute' : 'static
       collapse-mode="width"
       :collapsed-width="0"
       :width="240"
-      :collapsed="isMenuCollapsed"
+      :collapsed="false"
       :show-trigger="false"
       :native-scrollbar="false"
       :position="siderPosition"
@@ -40,7 +40,7 @@ const siderPosition = computed(() => (isSmallScreen.value ? 'absolute' : 'static
 }
 
 .sider {
-  display: block
+  display: none
 }
 
 .content {
