@@ -44,7 +44,7 @@ export const darkThemeOverrides: GlobalThemeOverrides = {
 
   Card: {
     color: '#232323',
-    borderColor: '#282828',
+    borderColor: '#1ea54c',
   },
 
   Table: {

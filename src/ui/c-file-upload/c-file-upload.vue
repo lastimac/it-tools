@@ -57,7 +57,7 @@ function handleUpload(files: FileList | null | undefined) {
   <div
     class="flex flex-col cursor-pointer items-center justify-center border-2px border-gray-300 border-opacity-50 rounded-lg border-dashed p-8 transition-colors"
     :class="{
-      'border-primary border-opacity-100': isOverDropZone,
+      'color-primary border-opacity-100': isOverDropZone,
     }"
     @click="triggerFileInput"
     @drop.prevent="handleDrop"

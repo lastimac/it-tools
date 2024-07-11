@@ -69,7 +69,7 @@ const size = computed(() => theme.value.size[sizeName.value]);
   line-height: 1;
   font-family: inherit;
   font-size: v-bind('size.fontSize');
-  border: none;
+  border: solid 1px #d1d1d1;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
@@ -80,7 +80,7 @@ const size = computed(() => theme.value.size[sizeName.value]);
   border-radius: 4px;
   transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
 
-  background-color: v-bind('variantTheme.backgroundColor');
+  background-color: white;
   display: inline-flex;
   flex-direction: row;
   align-items: center;
