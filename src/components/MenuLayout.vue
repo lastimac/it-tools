@@ -52,5 +52,6 @@ const siderPosition = computed(() => (isSmallScreen.value ? 'absolute' : 'static
 
 .n-layout {
   height: 100vh;
+  background-color: transparent;
 }
 </style>

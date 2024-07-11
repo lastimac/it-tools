@@ -21,8 +21,7 @@ syncRef(
 </script>
 
 <template>
-  <n-config-provider :theme="theme" :theme-overrides="themeOverrides">
-    <NGlobalStyle />
+  <n-config-provider :theme="theme" :theme-overrides="themeOverrides" inline-theme-disabled>
     <NMessageProvider placement="bottom">
       <NNotificationProvider placement="bottom-right">
         <component :is="layout">
