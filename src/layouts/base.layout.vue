@@ -31,7 +31,7 @@ const tools = computed<ToolCategory[]>(() => [
 </script>
 
 <template>
-  <MenuLayout class="menu-layout" :class="{ isSmallScreen: styleStore.isSmallScreen }" >
+  <MenuLayout class="menu-layout" :class="{ isSmallScreen: styleStore.isSmallScreen }">
     <template #sider>
       <RouterLink to="/" class="hero-wrapper">
         <HeroGradient class="gradient" />
@@ -51,7 +51,7 @@ const tools = computed<ToolCategory[]>(() => [
           <locale-selector w="90%" />
 
           <!-- <div flex justify-center> -->
-            <!-- <NavbarButtons /> -->
+          <!-- <NavbarButtons /> -->
           <!-- </div> -->
         </div>
 
@@ -88,7 +88,7 @@ const tools = computed<ToolCategory[]>(() => [
     </template>
 
     <template #content>
-      <div flex items-center justify-center gap-2 style="display:none">
+      <div flex items-center justify-center gap-2 style="display: none">
         <c-button
           circle
           variant="text"
@@ -115,7 +115,7 @@ const tools = computed<ToolCategory[]>(() => [
         <locale-selector v-if="!styleStore.isSmallScreen" />
 
         <div>
-          <!-- <NavbarButtons v-if="!styleStore.isSmallScreen" /> -->
+          <NavbarButtons v-if="!styleStore.isSmallScreen" />
         </div>
 
         <c-tooltip position="bottom" :tooltip="$t('home.support')">

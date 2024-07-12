@@ -66,16 +66,16 @@ html {
 }
 ::-webkit-scrollbar-thumb {
     background-color: #d3d7cf;
-    border-radius: 3px;
+    border-radius: 6px;
 }
 
 ::-webkit-scrollbar {
-    width: 3px;
+    width: 6px;
     background-color: transparent;
 }
 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: transparent;
 }
 </style>

@@ -9,6 +9,11 @@ export const useStyleStore = defineStore('style', {
     const isSmallScreen = useMediaQuery('(max-width: 700px)');
     const isMenuCollapsed = useStorage('isMenuCollapsed', isSmallScreen.value) as Ref<boolean>;
 
+    // 强制设置深色模式
+    if (!isDarkTheme.value) {
+      toggleDark();
+    }
+
     watch(isSmallScreen, v => (isMenuCollapsed.value = v));
 
     return {
