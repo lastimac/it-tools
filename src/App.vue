@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { RouterView, useRoute } from 'vue-router';
 import { NMessageProvider, NNotificationProvider, darkTheme } from 'naive-ui';
-import { darkThemeOverrides, lightThemeOverrides } from './themes';
+import { RouterView, useRoute } from 'vue-router';
 import { layouts } from './layouts';
 import { useStyleStore } from './stores/style.store';
+import { darkThemeOverrides, lightThemeOverrides } from './themes';
 
 const route = useRoute();
 const layout = computed(() => route?.meta?.layout ?? layouts.base);
@@ -53,6 +53,7 @@ html {
 * {
   box-sizing: border-box;
 }
+.c-select .c-select-input,
 .c-input-text .input-wrapper {
   border-radius: 2px !important;
 }
@@ -62,5 +63,19 @@ html {
 }
 [hover\:important\:border-primary=""]:hover {
   border-color: #e95420 !important;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #d3d7cf;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, .3);
+    background-color: transparent;
 }
 </style>

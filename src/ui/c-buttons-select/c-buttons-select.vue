@@ -62,3 +62,11 @@ function selectOption(option: CButtonSelectOption<T>) {
     </div>
   </c-label>
 </template>
+
+<style lang="less">
+.c-button {
+  &:focus {
+    outline: none
+  }
+}
+</style>
