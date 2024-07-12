@@ -41,7 +41,8 @@ export const { useTheme } = defineThemes({
     sizes,
 
     backgroundColor: '#ffffff',
-    borderColor: '#e0e0e69e',
+    borderColor: '#e0e0e6',
+    borderColorHover: 'red',
     dropdownShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px',
 
     option: {

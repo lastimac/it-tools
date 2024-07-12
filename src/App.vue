@@ -45,7 +45,22 @@ html {
   padding: 0;
 }
 
+.c-button.circle {
+  outline: none !important;
+  border: none;
+}
+
 * {
   box-sizing: border-box;
+}
+.c-input-text .input-wrapper {
+  border-radius: 2px !important;
+}
+
+.important\:border-primary {
+  border-color: #e95420 !important;
+}
+[hover\:important\:border-primary=""]:hover {
+  border-color: #e95420 !important;
 }
 </style>

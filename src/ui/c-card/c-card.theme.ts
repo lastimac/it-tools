@@ -7,6 +7,6 @@ export const { useTheme } = defineThemes({
   },
   light: {
     backgroundColor: '#ffffff',
-    borderColor: '#bf4a21',
+    borderColor: '#ff8960',
   },
 });
