@@ -15,7 +15,7 @@ export const { themes: appThemes, useTheme: useAppTheme } = defineThemes({
     primary: {
       color: '#e95420',
       colorHover: '#ff7b4e',
-      colorPressed: '#0C7A43',
+      colorPressed: '#ff7b4e',
       colorFaded: '#e95420',
     },
     warning: {
@@ -49,9 +49,9 @@ export const { themes: appThemes, useTheme: useAppTheme } = defineThemes({
       colorPressed: 'rgba(255, 255, 255, 0.24)',
     },
     primary: {
-      color: '#1ea54c',
-      colorHover: '#36AD6A',
-      colorPressed: '#0C7A43',
+      color: '#e95420',
+      colorHover: '#ff7b4e',
+      colorPressed: '#ff7b4e',
       colorFaded: '#e954202f',
     },
     warning: {

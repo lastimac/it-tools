@@ -46,7 +46,7 @@ const siderPosition = computed(() => (isSmallScreen.value ? 'absolute' : 'static
 .content {
   // background-color: #f1f5f9;
   ::v-deep(.n-layout-scroll-container) {
-    padding: 26px;
+    padding: 40px 26px;
   }
 }
 

@@ -22,8 +22,8 @@ syncRef(
 
 <template>
   <n-config-provider :theme="theme" :theme-overrides="themeOverrides" inline-theme-disabled>
-    <NMessageProvider placement="bottom">
-      <NNotificationProvider placement="bottom-right">
+    <NMessageProvider placement="top">
+      <NNotificationProvider placement="top-right">
         <component :is="layout">
           <RouterView />
         </component>
